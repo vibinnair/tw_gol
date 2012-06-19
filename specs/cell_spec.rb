@@ -20,7 +20,6 @@ describe "Cell" do
 	end
 	
 	it "should add itself to the world on creation" do
-		#@world.cells.count.should == 1
 		@world.cell_at(1,1).should be @cell
 	end	 
 	

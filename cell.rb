@@ -8,14 +8,12 @@ class Cell
 		@y = y
 		@state = state
 		@world = world
-		#@world.cells << self
 		@world << self		
 	end
 	
 	def neighbours
 		neighbours = Neighbours.new
 	
-		#@world.cells.each do |cell|
 		@world.each do |cell|
 			if cell.x == @x && cell.y == @y + 1 #north
 				neighbours << cell
